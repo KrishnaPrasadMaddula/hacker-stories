@@ -6,7 +6,10 @@ function App() {
 
 
 
-  const title = 'React'; 
+  function getTitle(title){
+    return title;
+  }
+
 
 
   return (
@@ -26,8 +29,14 @@ function App() {
         </a>
       </header> */}
       <h1>
-        Hello World 
+        Hello {getTitle('React')}
       </h1>
+      <label htmlFor="search">
+Search: 
+      </label>
+      <input id="search" type="text"/>
+      
+      
     </div>
   );
 }
